@@ -154,6 +154,7 @@ public:
     double getHeight() const override;
     double getWidth() const override;
     std::ostream & genPostScript(std::ostream& os) const override;
+    std::ostream & moveToPos(std::ostream &, size_t) const override;
 private:
     std::vector<std::shared_ptr<Shape>> _shapes;
 };
@@ -164,6 +165,7 @@ public:
     double getHeight() const override;
     double getWidth() const override;
     std::ostream & genPostScript(std::ostream& os) const override;
+    std::ostream & moveToPos(std::ostream &, size_t) const override;
 private:
     std::vector<std::shared_ptr<Shape>> _shapes;
 };
@@ -174,6 +176,7 @@ public:
     double getHeight() const override;
     double getWidth() const override;
     std::ostream & genPostScript(std::ostream& os) const override;
+    std::ostream & moveToPos(std::ostream &, size_t) const override;
 private:
     std::vector<std::shared_ptr<Shape>> _shapes;
 };
