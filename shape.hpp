@@ -153,10 +153,7 @@ public:
     LayeredShape(std::initializer_list<std::shared_ptr<Shape>> i);
     double getHeight() const override;
     double getWidth() const override;
-    std::ostream & genPostScript(std::ostream& os) const override;
     std::ostream & moveToPos(std::ostream &, size_t) const override;
-private:
-    std::vector<std::shared_ptr<Shape>> _shapes;
 };
 
 class VerticalShape : public CompositeShapes {
@@ -164,10 +161,7 @@ public:
     VerticalShape(std::initializer_list<std::shared_ptr<Shape>> i);
     double getHeight() const override;
     double getWidth() const override;
-    std::ostream & genPostScript(std::ostream& os) const override;
     std::ostream & moveToPos(std::ostream &, size_t) const override;
-private:
-    std::vector<std::shared_ptr<Shape>> _shapes;
 };
 
 class HorizontalShape : public CompositeShapes {
@@ -175,10 +169,7 @@ public:
     HorizontalShape(std::initializer_list<std::shared_ptr<Shape>> i);
     double getHeight() const override;
     double getWidth() const override;
-    std::ostream & genPostScript(std::ostream& os) const override;
     std::ostream & moveToPos(std::ostream &, size_t) const override;
-private:
-    std::vector<std::shared_ptr<Shape>> _shapes;
 };
 
 #endif
