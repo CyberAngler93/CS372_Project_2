@@ -1,3 +1,7 @@
+# This is a forked Repo
+This repo is to complete the hw assingment on Template design patterns for CS372
+
+
 # CS372_Project_2
 to build this on linux use 
 g++ -o runtest main.cpp test.cpp shape.cpp
